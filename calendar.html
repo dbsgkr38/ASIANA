@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/calendar.css">
+
+    <script type="text/javascript" src="/C/pc/js/set_calendar.js"></script>
+
+    <script src="js/calendar.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<div class="ipt_elt calr calendar_wrap" id="divCalendarContainer">
+				<label for="sCalendarR" name="calDesc"><span class="hidden">날짜 선택</span></label>
+				<input type="text" id="sCalendarR" class="spotentry datepicker" readonly="" autocomplete="off" data-dateformat="y.mm.dd" data-type="multi_step" style="width:165px;" placeholder="탑승일" readonly="">
+				<input type="hidden" id="departureDate1" value="" name="departureDateR">
+				<input type="hidden" id="arrivalDate1" value="" name="arrivalDateR">
+				<a href="#none" class="btn_airport calendar_focus"><span class="hidden">탑승일 선택 달력보기</span></a>
+			</div>
+			
+			<div class="calendar_layer">
+				<h4 class="hidden">탑승일 선택</h4>
+				<div class="cal_cont">
+					<h4 class="hidden">달력</h4>
+					<div class="calendar_top">
+						<select name="" id="" class="white" title="탑승연도 및 월">
+							<option value="">2017.08</option>
+						</select>
+
+                        <div class="compareCalendar"></div>
+					<span href="#none" class="cal_status">가는 날</span><a href="#none" class="cal_reset calReset"><span class="hidden">달력 새로고침</span></a>					
+					<a href="#none" class="btn_cal_close"><span class="hidden">닫기</span></a>	
+				</div>	

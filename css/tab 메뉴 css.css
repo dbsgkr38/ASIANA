@@ -1,0 +1,585 @@
+#tab-menu{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+#tab-menu #tab-btn ul{
+    display: flex;
+    margin-left: 3px;
+}
+
+#tab-menu #tab-btn ul li{
+    width: 140px;
+    height: 50px;
+    background-color: #969696;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+#tab-menu #tab-btn ul li span{
+    font-size: 25px;
+    color: #fff;
+    position: relative;
+    left: -0px;
+}
+
+#tab-menu #tab-btn ul li a{
+    font-size: 18px;
+    padding-left: 5px;
+    color: #fff;
+}
+
+#tab-menu #tab-btn ul li.active{
+    background-color: #E30613;
+}
+
+
+
+/* 메인페이지 */
+
+.wrap{padding:15px; letter-spacing:-0.5px;}
+.tab_menu{position:relative;}
+.tab_menu .list{overflow:hidden;}
+.tab_menu .list li{float:left; margin-right:14px;}
+.tab_menu .list .btn{font-size:13px;}
+.tab_menu .list .cont{display:none; position:absolute; top:25px; left:0; background:#555; color:#fff; text-align:center; width:250px; height:100px; line-height:100px;}
+.tab_menu .list li.is_on .btn{font-weight:bold; color:green;}
+.tab_menu .list li.is_on .cont{display:block;}
+
+#tab-menu{
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    
+    border-top: 2px solid #FFB50C;
+    border-bottom: 2px solid #FFB50C;
+    position: relative;
+}
+
+
+.tab-cont1 > div.active-bg{
+    background: #fff;
+    box-shadow: 1px 1px 3px #1C1D20;
+}
+
+.tab-cont1 .reserve__btn{
+    width: 100%;
+    height: 50px;
+    background: yellow;
+}
+
+.tab-cont1 .reserve__btn ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.tab-cont1 .reserve__btn ul li{
+    width: 150px;
+    height: 30px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 50%;
+    border: 1px solid #1C1D20;
+    border-radius: 20px;
+}
+
+.tab-cont1 .reserve__coupon{
+    width: 110px;
+    height: 30px;
+    position: absolute;
+    right: 95px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    background: #E30613;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.tab-cont1  .reserve__btn ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1C1D20;
+    background: #fff;
+    font-size: 12px;
+}
+
+.tab-cont1 .reserve__btn ul li:nth-child(1){
+    position: absolute;
+    right: 420px;
+    margin-top: 50px;
+}
+
+.tab-cont1  .reserve__btn ul li:nth-child(2){
+    position: absolute;
+    right: 320px;
+    margin-top: 50px;
+}
+
+.tab-cont1  .reserve__btn ul li:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 200px;
+    margin-top: 50px;
+    width: 100px;
+}
+
+
+.tab-cont1  .reserve__btn ul li:last-child a{
+    margin-right: 10px;
+    text-indent: 15px;
+}
+
+.tab-cont1 .reserve__btn ul li span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tab-cont1 .reserve__text{
+    width: 100%;
+    height: 450px;
+}
+
+.tab-cont1 .reserve__text ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    top: 60px;
+    left: -20px;
+}
+
+.tab-cont1 .reserve__text ul li{
+    width: 270px;
+    margin: auto;
+    border-bottom: 2px solid #1C1D20;
+    /* background: #373E78; */
+}
+
+.tab-cont1 .reserve__text input{
+    position: relative;
+    text-align: center;
+    color: #969696;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    font-size: 20px;
+    left: -10px;
+    margin: auto;
+    
+}
+
+.tab-cont1 .reserve__text span{
+    display: flex;
+    position: relative;
+    right: -210px;
+    font-size: 35px;
+    color: #000000;
+}
+
+.tab-cont1 .reserve__text ul li:nth-child(1),
+.tab-cont1 .reserve__text ul li:nth-child(2){
+    margin-bottom: 50px;
+}
+
+.tab-cont1 .reserve__text ul li:nth-child(3){
+    height: 90px;
+}
+
+.tab-cont1 .reserve__text ul li:nth-child(3) > a{
+    margin-left: 60px;
+
+}
+
+ .bottom-btn{
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    display: flex;
+}
+
+ .bottom-btn > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+ .bottom-btn > ul li{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #969696;
+    border-radius: 20px;
+    border-bottom: none;
+    transition:  .3s ease-in-out;
+}
+
+.bottom-btn > ul li:hover{
+    background-color: #E30613;
+}
+
+.bottom-btn > ul li:nth-child(2){
+    margin: 0 60px;
+}
+
+ .bottom-btn > ul li a{
+    color: #fff;
+    text-align: center;
+    
+}
+
+.reserve__coupon1{
+    position: absolute;
+    top: 80px;
+    right: 18px;
+    background: #969696;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all .3s ease-in-out;
+}
+
+.reserve__coupon1:hover{
+    background: #373E78;
+}
+/* 체크인 */
+.tab-cont__check{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: none;
+}
+
+.tab-cont__check h2{
+    width: 700px;
+    text-indent: 40px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.tab-cont__check p{
+    height: 40px;
+    margin-top: 30px;
+    background: #cecbcb;
+    text-indent: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.tab-cont__check span{
+    text-indent: 40px;
+}
+
+.tab-cont__check ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    margin-top: 50px;
+}
+
+.tab-cont__check ul li{
+    display: flex;
+    width: 200px;
+    
+}
+
+.tab-cont__check ul li.center1{
+    width: 200px;
+}
+
+.tab-cont__check ul li.center1 div select{
+    background-color: #dbd8d8;
+    text-align: left;
+    width: 150px;
+    position: relative;
+    top: 25px;
+    text-align: center;
+    left: -50px;
+}
+
+
+
+.tab-cont__check ul li.center1 span{
+    position: relative;
+    right: 120px;
+    top: 22px;
+    cursor: pointer;
+    width: 20px;
+    
+}
+
+.tab-cont__check ul li input#number,
+.tab-cont__check ul li input#date{
+    border-bottom: 2px solid #1C1D20;
+    padding-bottom: 10px;
+    display: flex;
+    width: 220px;
+    font-size: 14px;
+    text-indent: 5px;
+}
+
+.tab-cont__check ul li input#number{
+    position: relative;
+    top: 14px;
+    left: -60px;
+}
+
+.tab-cont__check ul li input#date{
+    width: 150px;
+}
+
+.tab-cont__check ul li span{
+    position: relative;
+    right: -70px;
+    top: 25px;
+}
+
+.tab-cont__check ul > span{
+    width: 100px;
+    height: 40px;
+    background: #969696;
+    display: flex;
+    text-align: center;
+    line-height: 2.2;
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    right: 15px;
+    cursor: pointer;
+    text-indent: 35px;
+}
+
+.tab-cont__check ul > span:hover{
+    background: #E30613;
+    color: #fff;
+}
+
+
+/* 출도착 조회 */
+
+.tab-cont__search{
+    width: 100%;
+    position: relative;
+    height: 450px;
+    display: none;
+}
+
+.tab-cont__search h2{
+    width: 600px;
+    text-indent: 20px;
+    font-size: 19px;
+    font-weight: 700;
+    position: absolute;
+    padding-top: 25px;
+}
+
+.tab-cont__search ul{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 100px;
+    margin: 50px 0;
+   
+}
+
+.tab-cont__search ul li{
+    height: 40px;
+    margin: auto;
+    width: 250px;
+    border-bottom: 2px solid #1C1D20;
+    transition: all .3s ease-in-out;
+}
+
+.tab-cont__search ul li a{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.tab-cont__search ul li:nth-child(1){
+
+    position: absolute;
+    left: 100px;
+    top: 60px;
+    border: none;
+}
+
+.tab-cont__search ul li:nth-child(1) select{
+    width: 200px;
+    height: 40px;
+    line-height: 2.2;
+    text-align: left;
+    position: relative;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    text-indent: 30px;
+    font-family: "pgdL";
+    top: -7px;
+    border-bottom: 1px solid #E30613;
+}
+.tab-cont__search ul li:nth-child(1) span{
+    position: absolute;
+    top: 10px;
+    left: 175px;
+}
+
+.tab-cont__search ul li:nth-child(2) {
+    position: absolute;
+    text-indent: 30px;
+    top: 50px;
+    left: 450px;
+    width: 200px;
+    font-family: "pgdL";
+}
+
+.tab-cont__search ul li:nth-child(2) span{
+    position: absolute;
+    right: 0;
+}
+
+.tab-cont__search ul li:nth-child(3){
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    width: 200px;
+    text-indent: 30px;
+    font-family: "pgdL";
+}
+
+.tab-cont__search ul li:nth-child(3) span{
+    position: absolute;
+    right: 0;
+}
+
+.tab-cont__search ul li:nth-child(4){
+    border: none;
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    margin: auto;
+    font-family: "pgdL";
+}
+
+.tab-cont__search ul li:nth-child(4) p{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.tab-cont__search ul li > div{
+    width: 300px;
+    
+}
+
+.tab-cont__search ul li > div > select{
+    width: 250px;
+    background: rgb(231, 227, 223);
+    border: none;
+    
+}
+
+.tab-cont__search ul > span{
+    width: 130px;
+    height: 40px;
+    background: #969696;
+    position: absolute;
+    bottom: -70px;
+    left: 40%;
+    line-height: 2.2;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.tab-cont__search ul > span:hover{
+    background: #373E78;
+}
+
+
+
+/* 호텔/렌터카 */
+
+.tab-cont__car{
+    width: 100%;
+    height: 450px;
+    max-width: 100%;
+    position: relative;
+    display: none;
+}
+
+.tab-cont__car h2{
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    background: #cecbcb;
+    line-height: 2.3;
+    text-align: center;
+    font-weight: 700;
+}
+
+.tab-cont__car ul{
+    display: flex;
+    position: absolute;
+    margin-top: 40px;
+}
+
+.tab-cont__car ul li a{
+    width: 160px;
+    height: 50px;
+    background: #969696;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 2.5;
+    margin: auto;
+    transition: all .3s ease-in-out;
+}
+
+.tab-cont__car ul li a:hover{
+    background: #373E78;
+}

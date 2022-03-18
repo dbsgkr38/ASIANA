@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASIANA</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+
+    <!-- 파비콘 -->
+    <link rel="shorscut icon" href="../images/favicon.ico">
+
+    <!-- 브라우저 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset@1.5.1/css/reset.min.css">
+
+
+    <!-- lodash : 스크롤 제어 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+        integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- google Material Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <!-- Swiper slide -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- drop down menu -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+
+
+    <!-- calendar -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <!-- bx slider -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+
+    <!-- gsap : 애니메이션 제어 / scroll top -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"
+        integrity="sha512-agNfXmEo6F+qcj3WGryaRvl9X9wLMQORbTt5ACS9YVqzKDMzhRxY+xjgO45HCLm61OwHWR1Oblp4QSw/SGh9SA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- scroll magic -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+        integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script defer src="js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <h1><a href="#"><img src="../images/top logo.png" alt="ASIANA"></a></h1>
+            <!-- pc nav -->
+            <nav id="gnb-pc">
+                <ul class="main-menu">
+                    <li class="item">
+                        <div class="item__name"><a href="#">예약</a></div>
+                        <div class="item__contents">
+                            <div class="contents__menu">
+                                <ul class="menu__inner">
+                                    <li><a href="#">항공권 예약</a></li>
+                                    <li><a href="#">예약조회</a></li>
+                                    <li><a href="#">체크인하기</a></li>
+                                    <li><a href="#">운항정보</a></li>
+                                    <li><a href="#">취항지정보</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item__name"><a href="#">여행준비</a></div>
+                        <div class="item__contents">
+                            <div class="contents__menu">
+                                <ul class="menu__inner">
+                                    <li><a href="#">체크인 안내</a></li>
+                                    <li><a href="#">사전 좌성 배정</a></li>
+                                    <li><a href="#">수하물</a></li>
+                                    <li><a href="#">도움이 필요한 고객</a></li>
+                                    <li><a href="#">출입국 신고서</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item__name"><a href="#">여행</a></div>
+                        <div class="item__contents">
+                            <div class="contents__menu">
+                                <ul class="menu__inner">
+                                    <li><a href="#">공항에서</a></li>
+                                    <li><a href="#">기내에서</a></li>
+                                    <li><a href="#">항공기 정보</a></li>
+                                    <li><a href="#">유료 부가서비스</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item__name"><a href="#">아시아나 클럽</a></div>
+                        <div class="item__contents">
+                            <div class="contents__menu">
+                                <ul class="menu__inner">
+                                    <li><a href="#">회원제도</a></li>
+                                    <li><a href="#">마일리지 적립</a></li>
+                                    <li><a href="#">마일리지 사용</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- mo nav -->
+        <nav id="gnb-mo">
+            <div class="login">
+                <ul>
+                    <li><a href="#">로그인
+                            <span class="material-icons">login</span>
+                        </a></li>
+                    <li><a href="#">
+                            <span class="material-icons">person_search</span>
+                        </a></li>
+                    <li><a href="#">
+                            <span class="material-icons">search</span>
+                        </a></li>
+                </ul>
+            </div>
+            <!-- -----------------drop down menu---------------- -->
+            <!-- Drop downn section and options -->
+            <div class="content-selection">
+                <select id="mySelect" onchange="npup.doSelect(this);">
+                    <!-- the option values are suffixes for the elements to show -->
+                    <option value="0">Korean</option>
+                    <option value="1">English</option>
+                    <option value="2">Japanise</option>
+                    <option value="2">Chinese</option>
+                </select>
+            </div>
+            <ul class="mainMenu">
+                <li class="item" id="reserve"><a href="#reserve" class="btn">예약</a>
+                    <ul class="subMenu">
+                        <li><a href="#">항공권 예약</a></li>
+                        <li><a href="#">예약조회</a></li>
+                        <li><a href="#">체크인하기</a></li>
+                        <li><a href="#">운항정보</a></li>
+                        <li><a href="#">취항지정보</a></li>
+                    </ul>
+                </li>
+                <li class="item" id="ready"><a href="#ready" class="btn">여행준비</a>
+                    <ul class="subMenu">
+                        <li><a href="#">체크인 안내</a></li>
+                        <li><a href="#">사전 좌성 배정</a></li>
+                        <li><a href="#">수하물</a></li>
+                        <li><a href="#">도움이 필요한 고객</a></li>
+                        <li><a href="#">출입국 신고서</a></li>
+                    </ul>
+                </li>
+                <li class="item" id="travel"><a href="#travel" class="btn">여행</a>
+                    <ul class="subMenu">
+                        <li><a href="#">공항에서</a></li>
+                        <li><a href="#">기내에서</a></li>
+                        <li><a href="#">항공기 정보</a></li>
+                        <li><a href="#">유료 부가서비스</a></li>
+                    </ul>
+                </li>
+                <li class="item" id="club"><a href="#club" class="btn">아시아나 클럽</a>
+                    <ul class="subMenu">
+                        <li><a href="#">아시아나 클럽</a></li>
+                        <li><a href="#">마일리지 적립</a></li>
+                        <li><a href="#">마일리지 사용</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <nav class="top-mo">
+                <ul class="top-menu">
+                    <li><a href="#">
+                            <p>챗봇</p>
+
+                        </a></li>
+                    <li><a href="#">
+                            <p>이벤트</p>
+
+                        </a></li>
+                    <li><a href="#">
+                            <p>고객서비스</p>
+
+                        </a></li>
+                </ul>
+            </nav>
+        </nav>
+
+
+        <nav class="top-main-mo">
+            <ul class="top-menu">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">고객서비스</a></li>
+            </ul>
+        </nav>
+
+        <!-- MENU Toggle btn -->
+        <div class="menu-toggle-btn">
+            <div id="one"></div>
+            <div id="two"></div>
+            <div id="three"></div>
+        </div>
+
+
+    </header>
+
+    <!-- -----------------drop down menu---------------- -->
+    <!-- Drop downn section and options -->
+    <div class="content-selection pc-drop">
+        <select id="mySelect" onchange="npup.doSelect(this);">
+            <option value="">Language</option>
+            <!-- the option values are suffixes for the elements to show -->
+            <option value="0">Korean</option>
+            <option value="1">English</option>
+            <option value="2">Japanise</option>
+            <option value="2">Chinese</option>
+        </select>
+    </div>
+
+    <!-- Main slider -->
+    <section class="main-slider">
+        <div class="bxslider">
+            <div><img src="../images/ASIANA SLIDE1 1.png" alt="slide1"></div>
+            <div><img src="../images/slide2.png" alt="slide1"></div>
+            <div><img src="../images/Group 22.png" alt="slide1"></div>
+            <div><img src="../images/ASIANA SLIDE8 1.png" alt="slide1"></div>
+            <div><img src="../images/ASIANA SLIDE5 1.png" alt="slide1"></div>
+        </div>
+    </section>
+
+
+    <!-- TAB MENU -->
+    <section id="tab-menu">
+        <div class="wrap">
+            <div class="tab_menu">
+                <ul class="list">
+                  <li class="is_on">
+                    <span class="material-icons">airplane_ticket</span>
+                    <a href="#tab1" class="btn">항공권예약</a>
+                  </li>
+                  <li>
+                    <span class="material-icons">fact_check</span>
+                    <a href="#tab2" class="btn">체크인</a>
+                  </li>
+                  <li>
+                    <span class="material-icons">travel_explore</span>
+                    <a href="#tab3" class="btn">출도착 조회</a>
+                  </li>
+                  <li>
+                    <span class="material-icons">directions_car_filled</span>
+                    <a href="#tab4" class="btn">호텔/렌터카</a>
+                  </li>
+                </ul>
+
+                <div class="cont_area">
+                    <!-- tab1 -->
+                  <div id="tab1" class="cont">
+                    <div class="reserve__btn">
+                        <ul class="reserve_top">
+                            <li><a href="#">왕복</a></li>
+                            <li><a href="#">편도</a></li>
+                            <li>
+                                <a href="#">다구간 </a>
+                                <span class="material-icons">arrow_drop_down</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="reserve__text">
+                        <ul>
+                            <li class="center1"><a href="javascript:void(0)">
+
+                                    <label for="number" class="hidden"></label>
+                                    <input type="text" placeholder="출발지" id="start">
+                                    <span class="material-icons">place</span>
+                                </a>
+                            </li>
+                            <li class="center1"><a href="javascript:void(0)">
+
+                                    <label for="number" class="hidden"></label>
+                                    <input type="text" placeholder="도착지" id="end">
+                                    <span class="material-icons">place</span>
+                                </a>
+                            </li>
+                            <li class="center1"><a href="javascript:void(0)">
+
+                                    <input type="date" class="reserve__text-start" 
+                                    name="탑승일" value="탑승일"
+                                        min="2022-03-16" max="2023-12-31">
+                                </a>
+                            </li>
+                            <li class="center1"><a href="javascript:void(0)">
+
+                                    <label for="number" class="hidden"></label>
+                                    <input type="text" placeholder="탑승객" id="person">
+                                    <span class="material-icons">person_add</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="reserve__coupon">마일리지 사용</span>
+                        <div class="bottom-btn">
+                            <ul>
+                                <li class="reserve__search1"><a href="#">조회</a></li>
+                                <li class="reserve__search2"><a href="#">예약조회</a></li>
+                                <li class="reserve__search3"><a href="#">항공권 조회</a></li>
+                            </ul>
+                        </div>
+                        <span class="reserve__coupon1"><a href="#">쿠폰선택</a> </span>
+    
+                        <div class='toggle' id='switch'>
+                            <div class='toggle-text-off'>OFF</div>
+                            <div class='glow-comp'></div>
+                            <div class='toggle-button'></div>
+                            <div class='toggle-text-on'>ON</div>
+                        </div>
+                    </div>
+                  
+
+                  <!-- tab2 -->
+                  <div id="tab2" class="cont">
+                    <div class="tab-cont__check">
+                        <h2>원하시는 좌석의 탑승권을 미리 발급받고 공항에서 대기시간을 줄이세요.</h2>
+                        <p><span class="material-icons">fmd_bad</span>팝업 차단 해제 후 이용해주시기 바랍니다.</p>
+                        <ul>
+                            <li class="center1">
+                                    <div>
+                                        <select name="location">
+                                            <option value="1">예약번호</option>
+                                            <option value="2">항공권번호</option>
+                                        </select>
+                                    </div>
+                                    <div id="output"></div>
+                                <span class="material-icons">arrow_drop_down</span>
+                            </li>
+                            <li class="center2"><a href="javascript:void(0)">
+                                    <label for="number" class="hidden"></label>
+                                    <input type="text" placeholder="8자리 숫자 또는 6자리 영문/숫자" id="number">
+                                </a>
+                            </li>
+                            <li class="center3"><a href="javascript:void(0)">
+                                    <label for="date" class="hidden"></label>
+                                    <label for="start"></label>
+                                    <input type="date" class="tab-cont__check-start" name="trip-start" value="2022-03-01"
+                                        min="2022-03-16" max="2022-03-31">
+                                </a>
+                            </li>
+                            <span>조회</span>
+                        </ul>
+                    </div>
+                  </div>
+
+                  <!-- tab3 -->
+                  <div id="tab3" class="cont">
+                    <div class="tab-cont__search">
+                        <h2>취항지 출도착 스케줄을 상세하게 확인하실 수 있습니다.</h2>
+                        <ul>
+                            <li class="center1">
+                                    <div>
+                                        <select name="location">
+                                            <option value="1">노선조회</option>
+                                            <option value="2">편명조회</option>
+                                        </select>
+                                    </div>
+                                    <div id="output"></div>
+                                    <span class="material-icons">arrow_drop_down</span>
+                            </li>
+                            <li class="center2">
+                                <label for="number" class="hidden"></label>
+                                    <input type="text" placeholder="출발지" id="start">
+                                    <span class="material-icons">place</span>
+
+                            </li>
+                            <li class="center3">
+                                <label for="number" class="hidden"></label>
+                                <input type="text" placeholder="도착지" id="start">
+                                    <span class="material-icons">place</span>
+
+                            </li>
+                            <li class="center4"><a href="javascript:void(0)">
+                                    <div>
+                                        <input type="date" class="tab-cont__search-start" name="trip-start"
+                                        value="2022-03-01" min="2022-03-16" max="2040-12-31">
+                                    </div>
+                                    <div id="output"></div>
+                                </a>
+                                <p> <span>-</span> 출발지 기준일</p>
+                            </li>
+                            <span>예약 조회</span>
+                        </ul>
+                    </div>
+                  </div>
+
+                  <!-- tab4 -->
+                  <div id="tab4" class="cont">
+                    <div class="tab-cont__car">
+                        <h2>호텔과 렌터카, 아시아나 항공에서만 드리는 특별한 혜택을 확인하세요.</h2>
+                        <ul>
+                            <li><img src="images/hotel-car img1 1.png" alt="Booking.com">
+                                <span><a href="https://sp.booking.com/index.ko.html?aid=1998339&lang=ko" target="_blank">호텔
+                                        예약하기</a></span>
+                            </li>
+                            <li><img src="images/hotel-car img2 1.png" alt="Rentalcars.com">
+                                <span><a href="https://asianaairlines.rentalcars.com/?preflang=ko&prefcurrency=KRW&adplat=quicksearch"
+                                        target="_blank">렌터카 예약하기</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+    </section>
+
+
+    <!-- LOW PRICE -->
+    <section class="low-price">
+        <h2>최저가 조회</h2>
+        <p>오늘부터 6개월 내 출발하는 항공편의 최저가와 출발일을 간편하게 조회하실수 있습니다.</p>
+        <div class="low-price__inner">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/Frankfurt img.png" alt="Frankfurt">
+                        <a class="ticket-buy">자세히 보기</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/la img.png" alt="la">
+                        <a class="ticket-buy">자세히 보기</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/newyork img.png" alt="newyork">
+                        <a class="ticket-buy">자세히 보기</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/sanfransisco img.png" alt="sanfransisco">
+                        <a class="ticket-buy">자세히 보기</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/singapor img.png" alt="singapor">
+                        <a class="ticket-buy">자세히 보기</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Honolulu img.png" alt="Honolulu">
+                        <a class="ticket-buy">자세히 보기</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/london img.png" alt="london">
+                        <a class="ticket-buy">자세히 보기</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/saifan img.png" alt="saifan">
+                        <a class="ticket-buy">자세히 보기</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/seattle img.png" alt="seattle">
+                        <a class="ticket-buy">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ASIANA CARE+ -->
+    <section class="asiana-care youtube">
+        <h2>ASIANA Care+</h2>
+        <p>Care+ 코로나 19 종합 안내</p>
+        <div class="asiana-care_video">
+            <video autoplay loop muted playsinline preload="auto" width="100%" >
+                <source src="video/ASIANA-Care.mp4" type="video/mp4">
+            </video>
+        </div>
+        <ul class="care-btn">
+            <li><a href="#"><img src="images/earth three white.png" alt="staraliance"> <span>스타얼라이언스<br> 회원 활동</span>
+                </a></li>
+            <li><a href="#"><img src="images/air white.png" alt="airplane"><span>운항노선 안내</span></a></li>
+            <li><a href="#"><img src="images/ticket white.png" alt="airticket"><span>항공권 안내</span></a></li>
+            <li><a href="#"><img src="images/check white.png" alt="clubmembers"><span>아시아나클럽 회원</span></a></li>
+            <li><a href="#"><img src="images/earth white.png" alt="earth"><span>국가별 입국제한 안내</span></a></li>
+            <li><a href="#"><img src="images/questian white.png" alt="questian"><span>자주하는 질문</span></a></li>
+        </ul>
+    </section>
+
+    <!-- EVENT MO-TAB -->
+    <section class="event-mo">
+        <h2>EVENT</h2>
+        <p>아시아나항공만의 특별한 혜택을 누려보세요.</p>
+        <div id="moreBtn" onclick="showMore()">전체보기+</div>
+        <div class="event__inner">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="images/event slide.png" alt="워킹홀리데이"></a>
+                        <button class="ticket-buy">항공권구매</button>
+                        <p>호주 워킹 홀리데이는 아시아나 항공 홍페이지에서</p>
+                    </div>
+                    <div class="swiper-slide hide"><a href="#"><img src="images/event slide2.png" alt="비즈니스 특가"></a>
+                        <button class="ticket-buy">항공권구매</button>
+                        <p>세상 착한 비즈니스 특가</p>
+                    </div>
+                    <div class="swiper-slide hide"><a href="#"><img src="images/event slide4.png"
+                                alt="제주까지 step by step"></a>
+                        <button class="ticket-buy">항공권구매</button>
+                        <p>제주까지 STEP BY STEP</p>
+                    </div>
+                    <div class="swiper-slide hide"><a href="#"><img src="images/event slide5.png"
+                                alt="제휴마일리지 적립하고 무료항공권 경품 도저~언"></a>
+                        <button class="ticket-buy">마일리지 혜택</button>
+                        <p>제휴마일리지 적립하고 무료항공권 경품 도저~언!</p>
+                    </div>
+                    <div class="swiper-slide hide"><a href="#"><img src="images/event slide6.png" alt="아시아나라이크"></a>
+                        <button class="ticket-buy">아시아나라이크</button>
+                        <p>아시아나라이크</p>
+                    </div>
+                </div>
+                <!-- <div class="swiper-prev"><span class="material-icons">arrow_back_ios</span></div>
+        <div class="swiper-next"><span class="material-icons">arrow_forward_ios</span></div> -->
+            </div>
+    </section>
+
+    <!-- EVENT MO-PC -->
+    <section class="event-pc">
+        <h2>EVENT</h2>
+        <div>혜택보기
+            <span class="material-icons">play_arrow</span>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="images/event slide.png" alt="워킹홀리데이">
+                        <p></p>
+                    </a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/event slide2.png" alt="비즈니스 특가"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/event slide4.png" alt="제주까지 step by step"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- 공지사항 영역 mo-tab-->
+    <section class="notice-mo">
+        <div class="notice-line-mo">
+            <div class="bg"></div>
+            <div class="inner-mo">
+                <div class="inner__bg">
+                    <h2>공지사항</h2>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">중국행 항공편 기내식 서비스 중단 안내</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">하와이 한정 기간 특별가격</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">중국 노선 한시적 비운항 안내</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">하와이 한정 기간 특별가격</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">중국 노선 한시적 비운항 안내</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">한국 ↔ 방콕 운항 스케줄 및 태국 무격리 입국(Test & Go) 안내</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="notice-line__more">
+                        <div class="material-icons">add_circle</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- 공지사항 영역 pc -->
+    <section class="notice-pc">
+        <div class="bg"></div>
+        <div class="inner-pc">
+            <div class="inner__bg-pc">
+                <table>
+                    <tr>
+                        <td><a href="#">중국행 항공편 기내식 서비스 중단 안내</a></td>
+                        <td>2022.02.28</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">하와이 한정 기간 특별가격</a></td>
+                        <td>2022.03.14</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">중국 노선 한시적 비운항 안내</a></td>
+                        <td>2022.03.08</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">스타얼라이언스 추천율(NPS) 설문조사</a></td>
+                        <td>2022.03.02</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">한국 ↔ 방콕 운항 스케줄 및 태국 무격리 입국(Test & Go) 안내</a></td>
+                        <td>2022.03.02</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 제휴서비스 -->
+
+    <section class="service">
+        <div class="inner-service">
+            <div class="medal">
+                <h2>제휴서비스안내</h2>
+                <div class="medal-item1">
+                    <div class="front1">
+                        <span class="material-icons">credit_score</span>
+                        <p class="item front__text1">마일리지 적립</p>
+                    </div>
+                    <div class="back1">
+                        <p class="item back__text1">제휴 신용카드 <br>사용하고, <br>마일리지 적립하고!!</p>
+                        <a href="javascript:void(0)" class="medal_btn">바로가기</a>
+                    </div>
+                </div>
+
+                <div class="medal-item2">
+                    <div class="front2">
+                        <span class="material-icons">location_city</span>
+                        <p class="item front__text2">호텔</p>
+                    </div>
+                    <div class="back2">
+                        <p class="item back__text2">더 빠르고 스마트한 <br>숙박예약 <br> AGODA</p>
+                        <a href="javascript:void(0)" class="medal_btn">바로가기</a>
+                    </div>
+                </div>
+
+                <div class="medal-item3">
+                    <div class="front3">
+                        <span class="material-icons">directions_car_filled</span>
+                        <p class="item front__text3">렌터카</p>
+                    </div>
+                    <div class="back3">
+                        <p class="item back__text3">전세계 렌터카 <br> Rentalcars.com</p>
+                        <a href="javascript:void(0)" class="medal_btn">바로가기</a>
+                    </div>
+                </div>
+
+                <div class="medal-item4">
+                    <div class="front4">
+                        <span class="material-icons">contact_mail</span>
+                        <p class="item front__text4">여행자보험</p>
+                    </div>
+                    <div class="back4">
+                        <p class="item back__text4">해외여행의 필수품 <br>메리츠여행자보험</p>
+                        <a href="javascript:void(0)" class="medal_btn">바로가기</a>
+                    </div>
+                </div>
+
+                <div class="medal-item5">
+                <div class="front5">
+                    <span class="material-icons">local_offer</span>
+                    <p class="item front__text5">투어&액티비티</p>
+                </div>
+                <div class="back5">
+                    <p class="item back__text5">아시아나항공에서 <br>항공권 예약시 <br>마이리얼트립 최대 10% 할인</p>
+                    <a href="javascript:void(0)" class="medal_btn">바로가기</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <h3><a href="javascript:void(0)"><img src="images/footer logo.png" alt="ASIANA AIRLINES"></a></h3>
+        <nav>
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">기타안내</a></li>
+                <li><a href="#">약관 및 규정</a></li>
+            </ul>
+        </nav>
+        <ul>
+            <li><a href="#"><img src="images/image 60.png" alt="스카이트랙스 선정"></a></li>
+            <li><a href="#"><img src="images/image 59.png" alt="A STAR ALLIANCE MEMBER"></a></li>
+            <li><a href="#"><img src="images/image 61.png" alt="I MECENAT"></a></li>
+        </ul>
+        <address>
+            아시아나항공㈜ 대표이사 정성권 | 사업자등록번호 104-81-17480 | 통신판매업 신고 제 16-2822<br>
+            서울특별시 강서구 오정로 443-83 | 예약 1588-8000 / 02-2669-8000 | 아시아나클럽 1588-8180 / 02-2669-8180<br>
+            개인정보보호책임자 여객전략 상무 임선진 | 서버 위치 : 아시아나IDT㈜ 전산센터
+        </address>
+        <p>&copy;ASIANA AIRLINES. All rights reserved. </p>
+
+        <ul class="bottom__footer">
+            <li><a href="https://www.facebook.com/flyasiana"><img src="images/facebook.png" alt="facebook"
+                        target="_blank"></a></li>
+            <li><a href="https://www.instagram.com/flyasiana/"><img src="images/instagram.png" alt="facebook"
+                        target="_blank"></a></li>
+            <li><a href="https://www.youtube.com/channel/UC4_LKvfpSNP9Ot-RX4J63Pg"><img src="images/youtube.png"
+                        alt="facebook" target="_blank"></a></li>
+            <li><a href="https://twitter.com/FlyAsiana"><img src="images/twiter.png" alt="twitter" target="_blank"></a>
+            </li>
+            <li><a href="https://story.kakao.com/ch/asianaairlines"><img src="images/kakao.png" alt="kakao"
+                        target="_blank"></a></li>
+
+        </ul>
+    </footer>
+
+    <!-- SCROLL TO TOP -->
+    <div id="to-top">
+        <div class="material-icons">arrow_upward</div>
+    </div>
+
+
+</body>
+
+</html>
